@@ -4,6 +4,8 @@
 
   <h1>Flats</h1>
 
+  <h2><%= link_to 'New flat listing', new_flat_path %></h2>
+
   <table>
     <thead>
       <tr>
@@ -24,6 +26,7 @@
           <td><%= flat.description %></td>
           <td><%= flat.price_per_night %></td>
           <td><%= flat.number_of_guests %></td>
+          <td><%= link_to 'More info', flat %></td>
         </tr>
       <% end %>
     </tbody>
